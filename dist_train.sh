@@ -1,7 +1,7 @@
 #!/bin/bash
 now=$(date +"%Y%m%d_%H%M%S")
 
-epoch=10000
+epoch=10
 bs=2
 gpus=1
 lr=0.000001
@@ -10,7 +10,7 @@ dataset=hypersim # vkitti
 img_size=350
 min_depth=0.001
 max_depth=20 # 80 for virtual kitti
-pretrained_from=../checkpoints/depth_anything_v2_metric_hypersim_vitl.pth
+pretrained_from=checkpoints/depth_anything_v2_metric_hypersim_vitl.pth
 save_path=exp/hypersim # exp/vkitti
 
 mkdir -p $save_path
